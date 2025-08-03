@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my temp Web</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="container">
+        <h1> Tempreture Converter</h1>
+        <input id="tempinput" type="text" placeholder="Enter" ><br><br>
+        <input id="radio1" type="radio" name="t"> 
+        <label class="lable" for="radio1" >Celcius to Fahrenite</label> <br><br>
+         <input id="radio2" type="radio" name="t">
+       <lable  class="lable"  for="radio2">Fahrenite to celcius</label> <br><br>
+       <button id="subBtn" type="submit">submit</button> <br><br>
+       <label id="answer"></label>
+
+ </div>
+<div id="container">
+    <h1>Dice Roller</h1><br>
+    <label id="labelD">Number of dice:</label>
+    <input type="number" value="1" min="1" max="6" id="diceNum" >
+    <button type="submit" onclick="roll()" id="subDice">Roll Dice</button>
+    <div id="diceResult"></div>
+    <div id="diceImages"></div>
+ 
+</div>
+<div class="clock-container">
+    <div class="clock">
+        00:00:00
+    </div>
+</div>
+    <script src="temp.js"></script>
+
+</body>
+</html>

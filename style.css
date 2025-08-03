@@ -1,0 +1,115 @@
+
+#numB{
+    display: block;
+    text-align: center; 
+    font-size:5em;
+}
+.btn{
+    background-color: rgb(153, 153, 244);
+    border-radius: 5px;
+     color: white;
+     padding: 5px;
+     cursor: pointer;
+     transition: background-color 0.25s;
+}
+.btn:hover{
+    background-color:blue ;
+}
+.buttons{
+   text-align: center;
+   font-size:3em;
+}
+#rollBtn{
+    text-align: center;
+   font-size:3em;
+}
+#mylable{
+    font-size: 3em;
+    
+}
+#ageLable{
+    font-size: 2em;
+}
+.container{
+    background-color: #ffffff;
+    border-style: solid;
+    text-align: center;
+    height: 400px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 23px;
+    border-color: #ffffff;
+    box-shadow: 5px 5px 5px rgb(58, 59, 63);
+}
+#tempinput{
+    height: 40px;
+    text-align: center;
+    font-size: 2em;
+    width:200px ;
+   background-color: antiquewhite;
+    
+}
+.lable{
+    font-size: 1.5em;
+    font-weight: bolder;
+
+}
+#subBtn{
+    width: 100px;
+    height: 30px;
+    background-color: tomato;
+    border-radius: 7px;
+    border-color: #c60707;
+}
+
+#container{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+margin-top: 30px;
+}
+#diceNum{
+    text-align: center;
+    font-size: 2rem;
+}
+#labelD{
+    font-size: 2rem;
+}
+#subDice{
+    border: none;
+    font-size: 2rem;
+    background-color: tomato;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#subDice:hover{
+        background-color: hsl(9, 100%, 44%);
+
+
+}
+#subDice:active{
+        background-color: hsl(9, 100%, 84%);
+
+
+}
+#diceResult{
+    margin: 40px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#diceImages img{
+    height: 100px;
+width: 100px;
+margin: 20px;
+
+}
+.clock-container{
+    display: flex;
+    justify-content: center;
+}
+.clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    backdrop-filter: blur(50px);
+    
+}
