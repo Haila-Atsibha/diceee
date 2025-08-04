@@ -1,11 +1,12 @@
-#whole{
-    border:2px solid;
-    border:none;
-    max-width:400px;
-    margin:10px;
-    display:flex;
-    justify-content:center;
+#whole {
+  max-width: 400px;
+  margin: 10px auto;       /* center horizontally */
+  display: flex;
+  flex-direction: column;  /* stack children vertically */
+  align-items: center;     /* center children horizontally */
+  gap: 10px;               /* space between children */
 }
+
 
 #numB{
     display: block;
