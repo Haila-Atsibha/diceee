@@ -107,9 +107,37 @@ margin: 20px;
     display: flex;
     justify-content: center;
 }
-.clock{
+#clock{
     font-family: monospace;
     font-size: 6.5rem;
     backdrop-filter: blur(50px);
     
 }
+#stpwtch{
+   text-align: center;
+   border: 2px solid;
+   margin: 20px;
+   padding: 10px;
+   border-radius: 9px;
+   font-family: monospace;
+   font-size: 3em;
+}
+#start{
+    font-size: 1em;
+    background-color: hsla(120, 80%, 51%, 0.495);
+    border-radius: 9px;
+    cursor: pointer;
+}
+#stop{
+    font-size: 1em;
+      background-color: red;
+    border-radius: 9px;
+     cursor: pointer;
+}
+#reset{
+    font-size: 1em;
+      background-color: hsla(221, 80%, 51%, 0.495);
+    border-radius: 9px;
+     cursor: pointer;
+}
+

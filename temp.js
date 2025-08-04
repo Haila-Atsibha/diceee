@@ -38,3 +38,75 @@ function roll(){
 
 
 }
+
+
+function updateClock(){
+
+       const now=new Date();
+       let hours=now.getHours();
+       const m=hours>=12?"PM":"AM";
+       hours=hours%12||12;
+       hours=hours.toString().padStart(2,0);
+       const minutes=now.getMinutes().toString().padStart(2,0);
+       const seconds=now.getSeconds().toString().padStart(2,0);
+const display=`${hours}:${minutes}:${seconds} ${m}`;
+document.getElementById("clock").textContent=display;
+
+}
+updateClock();
+setInterval(updateClock,1000);
+ let hours=0;
+    let minutes=0;
+    let seconds=0;
+    let microseconds=0;
+    let interval=null;
+function run(){
+    microseconds++;
+    if(microseconds===100){
+        seconds++;
+        microseconds=0;
+    }
+    if(seconds==60){
+        minutes++;
+        seconds=0;
+    }
+    if(minutes==60){
+        hours++;
+        minutes=0;
+    }
+const displayWatch =
+    `${hours.toString().padStart(2, '0')}:` +
+    `${minutes.toString().padStart(2, '0')}:` +
+    `${seconds.toString().padStart(2, '0')}:` +
+    `${microseconds.toString().padStart(2, '0')}`;
+   document.getElementById("stopWatch").textContent=displayWatch;
+
+
+
+   
+}
+
+function startWatch(){
+   if(interval) return;
+   interval=setInterval(run ,10)
+  
+ 
+}
+
+function resettWatch(){
+    clearInterval(interval);
+interval=null;
+    hours = minutes = seconds = microseconds = 0;
+    document.getElementById("stopWatch").textContent = "00:00:00:00";
+
+
+
+}
+function stopWatch() {
+  clearInterval(interval);
+  interval = null;
+}
+
+
+
+
